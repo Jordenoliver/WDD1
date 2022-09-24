@@ -4,30 +4,49 @@ body {
 nav {
     background-color: steelblue;
     padding: 10px;
+    text-align: center;
   }
 a {
     color: white;
     margin: 40px;
+    font-size: 1.5em;
+  }
+a:hover {
+    background-color: white;
+    color: steelblue;
   }
 h1 {
+    text-align: center;
     color: steelblue;
   }
 img {
-    width: 800px;
+    width: 80%;
+    display: block;
+    margin: 0 auto;
     border: 4px solid steelblue;
   }
 p {
+    width: 80%;
     padding: 10px;
+    margin: 0 auto;
+    text-align: center;
   }
 footer {
     background-color: steelblue;
     color: white;
+    text-align: center;
   }
 .main-para {
     font-size: 1.5em;
     line-height: 1.5em;
+    margin: 0 auto;
+    text-align: center;
   }
 #active {
     background-color: white;
     color: steelblue;
+  }
+#active:hover {
+    background-color: steelblue;
+    color: white;
   }
