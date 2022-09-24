@@ -1,0 +1,63 @@
+#background {
+    height: 725px;
+}
+body {
+    background-color: white;
+    margin: 0 auto;
+    text-align: center 
+}
+header {
+        background-color:rgb(101, 25, 27);
+        margin: 0 auto;
+        text-align: center
+    }
+nav a:hover {
+    background-color: black;
+    color: #e7890e;
+}
+.icon {
+    width: 3%;
+}
+nav a {
+    text-align: center;
+    color: #fcfbfb;
+    text-decoration: none;
+}
+footer p {
+    background-color:rgb(101, 25, 27);
+    text-size-adjust: 1.2em;
+    display: block;
+    margin: 0 auto;
+    text-align: center
+} 
+footer p a:hover {
+    text-decoration: underline;
+}
+#hero {
+    display: block;
+    margin: 0 auto;
+}
+.rivers-card {
+    width: 80%;
+    display: inline;
+    margin: 0 auto;
+    border: 4px solid steelblue;
+}
+.camping-card {
+    width: 80%;
+    display: inline;
+    margin: 0 auto;
+    border: 4px solid steelblue;
+}
+.hiking-card {
+    width: 80%;
+    display: inline;
+    margin: 0 auto;
+    border: 4px solid steelblue;
+}
+.rapids-card {
+    width: 80%;
+    display: inline;
+    margin: 0 auto;
+    border: 4px solid steelblue;
+}
