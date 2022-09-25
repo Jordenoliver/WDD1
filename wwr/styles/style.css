@@ -1,19 +1,96 @@
-#background {
-    height: 725px;
+
+@import url('https://fonts.googleapis.com/css2?family=Kurale&family=Open+Sans&family=Philosopher&family=Poppins&display=swap');
+
+:root {
+  --primary-color: #4f6d7a   ;
+  --secondary-color: #db4c40 ;
+  --accent1-color: #ff570a;
+  --accent2-color: white;
+  --heading-font: Kurale, Raleway;
+  --paragraph-font: Philosopher, Open-Sans, Poppins;
+  --headline-color-on-white: #4f6d7a;
+  --headline-color-on-color: #ff570a;
+  --paragraph-color-on-white: #4f6d7a;
+  --paragraph-color-on-color: #ff570a;
+  --paragraph-background-color: #4f6d7a  ;
+  --nav-link-color: #4f6d7a;
+  --nav-background-color: #ff570a;
+  --nav-hover-link-color: white;
+  --nav-hover-background-color: #4f6d7a;
 }
 body {
     background-color: white;
     margin: 0 auto;
     text-align: center 
 }
+ h1, h2, h3, h4, h5, h6 {
+    font-family: var(--heading-font);
+    color: var(--headline-color-on-white);
+}
+h2 {
+    text-align: center;
+}
+hr {
+    height: 3px;
+    margin: 35px 0;
+    background: var(--accent1-color);
+}
 header {
-        background-color:rgb(101, 25, 27);
-        margin: 0 auto;
-        text-align: center
-    }
+    padding: 1em;
+    text-align: center;
+    margin: 0 auto;
+    color: var(--paragraph-color-on-color);
+    background-color: var(--paragraph-background-color);
+}
+header > h1, header > h2 {
+    color: var(--headline-color-on-color);
+}
+p {
+    font-family: var(--paragraph-font);
+    color: var(--paragraph-color);
+    padding: 1em;
+}
+.colors {
+    width: 100%;
+    min-width: 350px;
+    margin: 30px auto;
+    text-align: center;
+}
+.colors th {
+    background-color: #999;
+}
+.colors td{
+    width: 25%;
+    height: 3em;
+}
+.primary {
+    background-color: var(--primary-color);
+}
+.secondary {
+    background-color: var(--secondary-color);
+}
+.accent1 {
+    background-color: var(--accent1-color);
+}
+.accent2{
+    background-color: var(--accent2-color);
+}
+p.colored {
+    background-color: var(--paragraph-background-color);
+    color: var(--paragraph-color-on-color);
+}
+nav {
+    background-color: var(--nav-background-color);
+    line-height: 3em;
+    text-align: center;
+    font-size: 1.2em;
+}
+nav a:link, nav a:visited {
+    color: var(--nav-link-color);
+}
 nav a:hover {
-    background-color: black;
-    color: #e7890e;
+    color: var(--nav-hover-link-color);
+    background-color: var(--nav-hover-background-color);
 }
 .icon {
     width: 9%;
@@ -24,8 +101,7 @@ nav a {
     text-decoration: none;
 }
 footer p {
-    background-color:rgb(101, 25, 27);
-    text-size-adjust: 1.2em;
+    text-size-adjust: 10%;
     display: block;
     margin: 0 auto;
     text-align: center
@@ -69,15 +145,10 @@ footer p a:hover {
     width: auto;
 }
 .msg {
-    background-color: rgb(101, 25, 27);
     text-align: center
 }
 .mountains {
-    margin: 0 auto;
-    background-color: rgb(101, 25, 27);
-}
-.social {
-    background-color: rgb(101, 25, 27);
+    margin: 0 auto; 
 }
 p {
     text-align: center;
