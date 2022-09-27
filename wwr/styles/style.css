@@ -18,12 +18,18 @@
   --nav-hover-link-color: white;
   --nav-hover-background-color: #4f6d7a;
 }
+#content {
+    max-width: 1600px;
+    min-width: 350px;
+    margin: 0 auto;
+    text-align: center;
+}
 body {
     background-color: white;
     margin: 0 auto;
     text-align: center 
 }
- h1, h2, h3, h4, h5, h6 {
+ h1, h2, h4, h5, h6 {
     font-family: var(--heading-font);
     color: var(--headline-color-on-white);
 }
@@ -51,7 +57,8 @@ p {
     padding: 1em;
 }
 .colors {
-    width: 100%;
+    width: 80px;
+    max-width: 1600px;
     min-width: 350px;
     margin: 30px auto;
     text-align: center;
@@ -87,39 +94,52 @@ nav {
 }
 nav a:link, nav a:visited {
     color: var(--nav-link-color);
+    text-decoration: none; 
 }
-nav a:hover {
+nav a:hover, nav a:active {
     color: var(--nav-hover-link-color);
     background-color: var(--nav-hover-background-color);
+    text-decoration: underline;
 }
 .icon {
-    width: 9%;
+    width: 80px;
 }
-nav a {
+a {
     text-align: center;
     color: #fcfbfb;
     text-decoration: none;
 }
+footer {
+    background-color: var(--paragraph-background-color);
+    color: var(--paragraph-color-on-color);
+}
 footer p {
-    text-size-adjust: 10%;
+    text-size-adjust: 1.2em;
     display: block;
     margin: 0 auto;
     text-align: center
 } 
-footer p a:hover {
+footer a:link, footer a:visited {
+    color: var(--accent1-color);
+    text-decoration: none; 
+}
+footer a:hover, footer a:active {
+    color: var(--nav-hover-link-color);
+    background-color: var(--nav-hover-background-color);
     text-decoration: underline;
 }
 #hero {
-    display: block;
+    width: 80px;
+    display: inline;
     margin: 0 auto;
 }
 .rivers-card {
-    width: 80%;
+    width: 80px;
     display: inline-block;
     margin: 0 auto;
 }
 .camping-card {
-    width: 80%;
+    width: 80px;
     display: inline-block;
     margin: 0 auto;
 
@@ -130,12 +150,12 @@ footer p a:hover {
     width: auto;
 }
 .hiking-card {
-    width: 80%;
+    width: 80px;
     display: inline;
     margin: 0 auto;
 }
 .rapids-card {
-    width: 80%;
+    width: 80px;
     display: inline;
     margin: 0 auto;
 }
@@ -151,5 +171,14 @@ footer p a:hover {
     margin: 0 auto; 
 }
 p {
+    text-align: center;
+}
+#background {
+    height: 725px;
+    background-color: var(--secondary-color);
+}
+summary {
+    background-color: var(--paragraph-background-color);
+    color: white;
     text-align: center;
 }
