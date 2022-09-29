@@ -1,5 +1,5 @@
 
-@import url('https://fonts.googleapis.com/css2?family=Kurale&family=Open+Sans&family=Philosopher&family=Poppins&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Aref+Ruqaa+Ink&family=Cinzel&family=Kurale&family=Open+Sans&family=Philosopher&family=Playfair+Display+SC&family=Poppins&family=Rubik+Dirt&family=Shadows+Into+Light&family=Smokum&family=Stalinist+One&display=swap');
 
 :root {
   --primary-color: #4f6d7a   ;
@@ -8,6 +8,9 @@
   --accent2-color: white;
   --heading-font: Kurale, Raleway;
   --paragraph-font: Philosopher, Open-Sans, Poppins;
+  --fun-font: Aref-Ruquaa-Inl, Playfair-Display-SC, Abril-Fatface;
+  --fun-font1: Rubik-Dirt, Showdos-Into-Light;
+  --fun-font2: Smokum, Stalinist-One, Cinzel;
   --headline-color-on-white: #4f6d7a;
   --headline-color-on-color: #ff570a;
   --paragraph-color-on-white: #4f6d7a;
@@ -18,6 +21,15 @@
   --nav-hover-link-color: white;
   --nav-hover-background-color: #4f6d7a;
 }
+.home-title {
+    font-family: var(--fun-font1);
+    font-size: 2em;
+    margin-top: 10px;
+
+}
+main section img {
+    box-sizing: border-box;
+}
 #content {
     max-width: 1600px;
     min-width: 350px;
@@ -26,7 +38,10 @@
 }
 body {
     background-color: white;
-    margin: 0 auto;
+    font-family: var(--paragraph-font);
+    font-size: 22px;
+    margin: 0 ;
+    padding: 0;
     text-align: center 
 }
  h1, h2, h4, h5, h6 {
@@ -35,6 +50,7 @@ body {
 }
 h2 {
     text-align: center;
+    margin: 0;
 }
 hr {
     height: 3px;
@@ -47,9 +63,11 @@ header {
     margin: 0 auto;
     color: var(--paragraph-color-on-color);
     background-color: var(--paragraph-background-color);
+    font-family: var(--heading-font);
 }
 header > h1, header > h2 {
     color: var(--headline-color-on-color);
+    font-family: var(--heading-font);
 }
 p {
     font-family: var(--paragraph-font);
@@ -95,23 +113,28 @@ nav {
 nav a:link, nav a:visited {
     color: var(--nav-link-color);
     text-decoration: none; 
+    padding: 35px;
 }
 nav a:hover, nav a:active {
     color: var(--nav-hover-link-color);
     background-color: var(--nav-hover-background-color);
     text-decoration: none;
+    padding: 35px;
 }
 .icon {
     width: 80px;
+    border-radius: 5px;
 }
 a {
     text-align: center;
-    color: #fcfbfb;
     text-decoration: none;
+
 }
 footer {
     background-color: var(--paragraph-background-color);
     color: var(--paragraph-color-on-color);
+    padding: 25px 50px;
+    margin-top: 200px;
 }
 footer p {
     text-size-adjust: 50%;
@@ -132,6 +155,9 @@ footer a:hover, footer a:active {
     width: 80px;
     display: inline;
     margin: 0 auto;
+}
+.card-img {
+    border: 10px solid var(--primary-color);
 }
 .rivers-card {
     width: 80px;
@@ -164,8 +190,50 @@ footer a:hover, footer a:active {
     margin: 0 auto;
     width: auto;
 }
+.rivers-card, .camping-card, .rapids-card, .hiking-card {
+    margin: 200px 0;
+} 
 .msg {
+    background-color: var(--nav-background-color);
+    line-height: 1.5em;
+    padding: 35px;
     text-align: center
+}
+.msg p {
+    font-size: .8em;
+    padding-bottom: 15px;
+}
+.book:link, .book:visited {
+    font-size: 18px;
+    padding: 15px 30px;
+    margin-top: 50px;
+    border-radius: 5px;
+    background-color: var(--nav-background-color);
+    color: black;
+}
+.pre_footer a:link, .pre_footer a :visited {
+    font-size: 18px;
+    padding: 15px 30px;
+    margin-top: 50px;
+    border-radius: 5px;
+    background-color: var(--nav-hover-background-color);
+    color: white;
+}
+.book:hover, .book:active {
+    font-size: 18px;
+    padding: 15px 30px;
+    margin-top: 50px;
+    border-radius: 5px;
+    background-color: var(--nav-hover-background-color);
+    color: white;
+}
+.pre_footer a:hover, .pre_footer a:active {
+    font-size: 18px;
+    padding: 15px 30px;
+    margin-top: 50px;
+    border-radius: 5px;
+    background-color: var(--nav-background-color);
+    color: black;
 }
 .mountains {
     margin: 0 auto; 
@@ -184,7 +252,12 @@ p {
 }
 .icon {
     width: 80px;
+    padding-top: 10px;
 }
 .logo_link{
     width: 80px;
+    padding-top: 5px;
+}
+.social {
+    padding-top: 15px;
 }
