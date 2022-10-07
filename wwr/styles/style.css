@@ -148,7 +148,7 @@ footer {
 }
 .home-grid {
     display: grid;
-    grid-template-columns: 100fr, 100fr, 100fr; 
+    grid-template-columns: 100fr 100fr 100fr 100fr 100fr 100fr 100fr 100fr 100fr 100fr; 
 }
 .home-title {
     color: black;
