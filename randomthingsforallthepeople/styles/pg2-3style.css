@@ -140,7 +140,7 @@ footer {
     justify-content: space-around;
     align-items: center;
     text-align: center;
-    grid-template-columns: 100px 100fr 25px 100fr 100px 100fr 25px 100fr;
+    grid-template-columns: 50px 100fr 25px 100fr 100px 100fr 25px 100fr 50px;
     grid-template-rows: 50px 100fr 50px 100fr;
 }
 .home-grid h2 {
@@ -193,7 +193,7 @@ footer .social img {
     grid-column: 2;
     grid-row: 2;
 }
-.p1 p {
+.p1w {
     grid-column: 4;
     grid-row: 2;
 }
@@ -201,7 +201,7 @@ footer .social img {
     grid-column: 6;
     grid-row: 2
 }
-.p2 p {
+.p2w {
     grid-column: 8;
     grid-row: 2;
 }
@@ -209,7 +209,7 @@ footer .social img {
     grid-column: 2;
     grid-row: 4;
 }
-.p3 p {
+.p3w {
     grid-column: 4;
     grid-row: 4;
 }
@@ -217,7 +217,7 @@ footer .social img {
     grid-column: 6;
     grid-row: 4;
 }
-.p4 p {
+.p4w {
     grid-column: 8;
     grid-row: 4;
 }
